@@ -15,7 +15,7 @@ steps:
 - script: dotnet tool install --global dotnet-sonarscanner
   displayName: "dotnet-sonarscanner install"
 
-- script: dotnet sonarscanner begin /o:test-crispy-couscous /k:test-crispy-couscous_test-automation-2 /d:sonar.host.url=https://sonarcloud.io /d:sonar.login="$(SONAR_TOKEN)" /d:sonar.branch.name="$(Build.SourceBranchName)"
+- script: dotnet sonarscanner begin /o:test-crispy-couscous /k:test-crispy-couscous_test-automation-3 /d:sonar.host.url=https://sonarcloud.io /d:sonar.login="$(SONAR_TOKEN)" /d:sonar.branch.name="$(Build.SourceBranchName)"
   displayName: "sonar begin"
 
 - task: DotNetCoreCLI@2
